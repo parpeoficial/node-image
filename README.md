@@ -1,4 +1,4 @@
-# Nginx Node Image
+# Node Image
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/parpe/node-image.svg?style=flat-square)](https://hub.docker.com/r/parpe/node-image/)
 [![Docker Stars](https://img.shields.io/docker/stars/parpe/node-image.svg?style=flat-square)](https://hub.docker.com/r/parpe/node-image/)
