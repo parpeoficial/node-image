@@ -11,4 +11,4 @@ An docker image with node.js
 
 ## Usage
 
-`parpe/node-image:8.9.4-alpine`
+`parpe/node-image:9.0.0-alpine`
