@@ -1,21 +1,14 @@
-# Nginx Node Image
+# Node Image
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/parpe/node-image.svg?style=flat-square)](https://hub.docker.com/r/parpe/node-image/)
-[![Docker Stars](https://img.shields.io/docker/stars/parpe/node-image.svg?style=flat-square)](https://hub.docker.com/r/parpe/node-image/)
+![Travis branch](https://img.shields.io/travis/parpeoficial/node-image/8.9.4-alpine.svg?style=flat-square)
 
-An docker image with node.js and nginx
+An docker image with node.js
 
 ## Components
 
 * Common tools e.g. `curl`, `supervisor`.
-* Bonus tool `glibc`.
+* Bonus tool: `glibc`
 
 ## Usage
 
-`parpe/node-image:<version>`
-
-## Versions
-
-| Version      | Build Status                                                                                               |
-| ------------ | ---------------------------------------------------------------------------------------------------------- |
-| 8.9.4-alpine | ![Travis branch](https://img.shields.io/travis/parpeoficial/node-image/8.9.4-alpine.svg?style=flat-square) |
+`parpe/node-image:8.9.4-alpine`

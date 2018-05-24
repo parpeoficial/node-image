@@ -1,0 +1,17 @@
+sudo: true
+dist: trusty
+
+env:
+  global:
+    - REPOSITORY=node-image
+
+jobs:
+  include:
+    - stage: Build Image & Deploy
+      script:
+      - docker pull parpe/$REPOSITORY:$TRAVIS_BRANCH
+      - docker build -t $REPOSITORY:$TRAVIS_BRANCH .
+      - docker images
+      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      - docker tag $REPOSITORY:$TRAVIS_BRANCH parpe/$REPOSITORY:$TRAVIS_BRANCH
+      - docker push parpe/$REPOSITORY:$TRAVIS_BRANCH
