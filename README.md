@@ -16,6 +16,7 @@ An docker image with node.js and nginx
 
 ## Versions
 
-| Version      | Build Status                                                                                               |
-| ------------ | ---------------------------------------------------------------------------------------------------------- |
-| 8.9.4-alpine | ![Travis branch](https://img.shields.io/travis/parpeoficial/node-image/8.9.4-alpine.svg?style=flat-square) |
+| Version       | Build Status                                                                                                |
+| ------------- | ----------------------------------------------------------------------------------------------------------- |
+| 8.9.4-alpine  | ![Travis branch](https://img.shields.io/travis/parpeoficial/node-image/8.9.4-alpine.svg?style=flat-square)  |
+| 9.11.1-alpine | ![Travis branch](https://img.shields.io/travis/parpeoficial/node-image/9.11.1-alpine.svg?style=flat-square) |
