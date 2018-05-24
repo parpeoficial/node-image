@@ -1,6 +1,6 @@
 # Node Image
 
-![Travis branch](https://img.shields.io/travis/parpeoficial/node-image/9.0.0-alpine.svg?style=flat-square)
+![Travis branch](https://img.shields.io/travis/parpeoficial/node-image/9.11.1-alpine.svg?style=flat-square)
 
 An docker image with node.js
 
@@ -11,4 +11,4 @@ An docker image with node.js
 
 ## Usage
 
-`parpe/node-image:9.0.0-alpine`
+`parpe/node-image:9.11.1-alpine`
