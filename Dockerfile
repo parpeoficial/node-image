@@ -1,4 +1,4 @@
-FROM node:9.0.0-alpine
+FROM node:9.11.1-alpine
 
 RUN apk --no-cache add supervisor curl --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ && \
     ln -sf /usr/local/bin/node /usr/bin/node
