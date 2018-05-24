@@ -1,13 +1,10 @@
 FROM node:8.9.4-alpine
 
-# Install NGINX
-RUN apk --no-cache add supervisor curl --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ 
-ADD config/nginx /etc/nginx
+RUN apk --no-cache add supervisor curl --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ && \
+    ln -sf /usr/local/bin/node /usr/bin/node
 
 # Update NPM
 RUN npm install -g npm@latest && npm cache clean --force
-
-RUN ln -sf /usr/local/bin/node /usr/bin/node
 
 # Install GLIBC
 ENV LANG=C.UTF-8
@@ -40,7 +37,6 @@ RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases
     rm \
     "$ALPINE_GLIBC_BASE_PACKAGE_FILENAME" \
     "$ALPINE_GLIBC_BIN_PACKAGE_FILENAME" \
-    "$ALPINE_GLIBC_I18N_PACKAGE_FILENAME" && \
-    rm -rf package/ && rm -rf npm-$NPM_VERSION.tgz
+    "$ALPINE_GLIBC_I18N_PACKAGE_FILENAME"
 
 EXPOSE 80 443
