@@ -12,7 +12,7 @@ An docker image with node.js and nginx
 
 ## Usage
 
-`parpe/nginx-node-image:<version>`
+`parpe/node-image:<version>`
 
 ## Versions
 
